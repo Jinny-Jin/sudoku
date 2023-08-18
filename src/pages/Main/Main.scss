@@ -1,5 +1,24 @@
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
 .container {
-  border: 3px solid yellowgreen;
+  @include flex(flex, column, center, space-around);
+  @include backgroundImage(
+    url('../../../public/images/main/background.png'),
+    cover
+  );
+  background-color: $main-nightBlue;
+  border-radius: 2%;
   width: 30vw;
   height: 85vh;
+
+  header {
+    @include flex(flex, row, center, center);
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .button {
+    @include flex(flex, _, _, center);
+  }
 }

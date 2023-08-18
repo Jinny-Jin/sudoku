@@ -1,7 +1,15 @@
+import Button from '../../components/Button/Button';
 import './Main.scss';
 
-function StartPage() {
-  return <div className="container">Main Page</div>;
-}
+const StartPage = () => {
+  return (
+    <div className="container">
+      <header>Doki Doki Sudoku</header>
+      <div className="button">
+        <Button children="Start" buttonStyle="medium white" />
+      </div>
+    </div>
+  );
+};
 
 export default StartPage;

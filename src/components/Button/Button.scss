@@ -1,0 +1,15 @@
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
+.medium {
+  @include buttonSize(100px, 50px, 15px);
+  border-radius: 5%;
+}
+
+.blue {
+  @include buttonColor($main-nightBlue, $main-white);
+}
+
+.white {
+  @include buttonColor($main-white, $main-nightBlue);
+}
