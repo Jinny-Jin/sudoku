@@ -1,0 +1,24 @@
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
+.forDisplay {
+  @include flex(flex, column, center, center);
+}
+
+.small {
+  @include buttonSize(80px, 40px, 14px);
+  border-radius: 5%;
+}
+
+.medium {
+  @include buttonSize(100px, 50px, 15px);
+  border-radius: 5%;
+}
+
+.blue {
+  @include buttonColor($main-nightBlue, $main-white);
+}
+
+.white {
+  @include buttonColor($main-white, $main-nightBlue);
+}

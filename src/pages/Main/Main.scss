@@ -1,5 +1,26 @@
-.container {
-  border: 3px solid yellowgreen;
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
+.mainContainer {
+  @include flex(flex, column, center, space-around);
+  @include backgroundImage(
+    url('../../../public/images/main/background.png'),
+    cover,
+    _
+  );
+  background-color: rgb(6, 4, 54);
+  border-radius: 2%;
+  // border: 1px solid black;
   width: 30vw;
   height: 85vh;
+
+  header {
+    @include flex(flex, row, center, center);
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .button {
+    @include flex(flex, _, _, center);
+  }
 }

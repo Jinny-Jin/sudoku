@@ -1,0 +1,44 @@
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
+.stageContainer {
+  @include flex(flex, column, center, space-around);
+  @include backgroundImage(
+    url('../../../public/images/stage/greenroad.jpg'),
+    cover,
+    _
+  );
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+  border-radius: 2%;
+  font-weight: 600;
+  background-color: $main-white;
+  width: 30vw;
+  height: 85vh;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 2%;
+    opacity: 50%;
+    z-index: -1;
+    inset: 0;
+    background: white;
+  }
+
+  header {
+    font-size: xx-large;
+  }
+
+  .buttons {
+    @include flex(flex, column, center, space-between);
+
+    .outStageBtn,
+    .inStageBtn {
+      @include flex(flex, row, center, space-evenly);
+      padding-bottom: 20px;
+      width: 15vw;
+    }
+  }
+}

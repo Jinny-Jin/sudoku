@@ -1,0 +1,23 @@
+@mixin flex($display, $direction, $align, $justify) {
+  display: $display;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin buttonSize($width, $height, $fontSize) {
+  width: $width;
+  height: $height;
+  font-size: $fontSize;
+}
+
+@mixin buttonColor($background, $color) {
+  background-color: $background;
+  color: $color;
+}
+
+@mixin backgroundImage($url, $size, $repeat) {
+  background-image: $url;
+  background-size: $size;
+  background-repeat: $repeat;
+}
