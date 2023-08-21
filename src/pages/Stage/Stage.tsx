@@ -14,13 +14,13 @@ function Stage() {
 
   return (
     <div className="stageContainer">
-      <div>
+      <div className="top">
         <header>Stage1</header>
         <div className="life">life</div>
       </div>
       <main>스도쿠 문제</main>
       <div className="buttons">
-        <div>
+        <div className="inStageBtn">
           <Button
             children={<FontAwesomeIcon icon={arrow} size="lg" />}
             children2="실행 취소"
@@ -32,12 +32,12 @@ function Stage() {
             buttonStyle="small"
           />
         </div>
-        <div>
-          <Button children="제출" buttonStyle="medium blue" />
+        <div className="outStageBtn">
+          <Button children="제출" buttonStyle="small blue" />
           <Button
             children="포기"
             action={backToMain}
-            buttonStyle="medium white"
+            buttonStyle="small white"
           />
         </div>
       </div>

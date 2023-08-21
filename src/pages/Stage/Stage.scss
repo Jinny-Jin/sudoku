@@ -33,5 +33,12 @@
 
   .buttons {
     @include flex(flex, column, center, space-between);
+
+    .outStageBtn,
+    .inStageBtn {
+      @include flex(flex, row, center, space-evenly);
+      padding-bottom: 20px;
+      width: 15vw;
+    }
   }
 }

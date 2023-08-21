@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react';
 import './Button.scss';
 
 interface Props {
-  children?: ReactNode;
+  children: ReactNode;
   children2?: ReactNode;
   action?: () => void;
   buttonStyle?: string;
