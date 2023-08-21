@@ -1,14 +1,16 @@
 @import '../../styles/mixin';
 @import '../../styles/variables';
 
-.container {
+.mainContainer {
   @include flex(flex, column, center, space-around);
   @include backgroundImage(
     url('../../../public/images/main/background.png'),
-    cover
+    cover,
+    _
   );
-  background-color: $main-nightBlue;
+  background-color: rgb(6, 4, 54);
   border-radius: 2%;
+  // border: 1px solid black;
   width: 30vw;
   height: 85vh;
 

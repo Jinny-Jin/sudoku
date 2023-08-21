@@ -16,7 +16,8 @@
   color: $color;
 }
 
-@mixin backgroundImage($url, $size) {
+@mixin backgroundImage($url, $size, $repeat) {
   background-image: $url;
   background-size: $size;
+  background-repeat: $repeat;
 }
